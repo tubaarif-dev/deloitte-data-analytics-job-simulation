@@ -17,6 +17,7 @@
 - [Repository Structure](#repository-structure)
 - [Screenshots](#screenshots)
 - [Certificate](#certificate)
+- [Project Files](#project-files)
 - [What I Learned](#what-i-learned)
 - [Acknowledgements](#acknowledgements)
 
@@ -26,11 +27,11 @@
 
 This repository documents my completed work for the **Deloitte Australia Data Analytics Job Simulation** on **Forage**.
 
-The simulation provided hands-on experience with realistic business scenarios inspired by the type of work performed by Deloitte's Data Analytics and Forensic Technology teams.
+The simulation provided hands-on experience with realistic business scenarios inspired by the type of work performed by Deloitte Australia's Data Analytics and Forensic Technology teams.
 
-Across two practical tasks, I analyzed operational and workforce data using industry-standard tools to answer business questions, build data visualizations, and classify employee equality scores based on defined business rules.
+Across two practical tasks, I analyzed operational and workforce data using industry-standard tools to answer business questions, build interactive visualizations, and classify employee equality scores based on defined business rules.
 
-The project strengthened my understanding of data analysis, business problem solving, dashboard development, and spreadsheet-based decision support.
+Through this project, I strengthened my skills in data analysis, business problem solving, dashboard development, spreadsheet automation, and communicating insights through data.
 
 ---
 
@@ -42,18 +43,18 @@ The first initiative focused on manufacturing performance. Using telemetry data 
 
 The second initiative focused on workforce equality. Employee compensation data had already been processed into equality scores, and the objective was to classify those scores into meaningful categories that could support reporting and further investigation.
 
-These scenarios reflect how data analytics can help organizations improve operational efficiency and support informed decision-making.
+These scenarios reflect how data analytics helps organizations improve operational efficiency and support informed business decisions.
 
 ---
 
 ## Project Objectives
 
 - Analyze factory telemetry data to identify operational downtime.
-- Build an interactive Tableau dashboard for business users.
+- Build an interactive Tableau dashboard.
 - Compare downtime across manufacturing locations.
 - Identify the machine types responsible for the highest downtime.
 - Classify employee equality scores using Microsoft Excel.
-- Apply business rules to produce consistent and accurate classifications.
+- Apply business rules to automate data classification.
 - Present findings in a clear and structured format.
 
 ---
@@ -70,9 +71,9 @@ These scenarios reflect how data analytics can help organizations improve operat
 
 ---
 
-# Task 1: Factory Telemetry Analysis
+## Task 1: Factory Telemetry Analysis
 
-## Background
+### Background
 
 Daikibo Industrials collected one month of telemetry data from four manufacturing facilities located in:
 
@@ -85,19 +86,14 @@ Each factory operated multiple machine types that transmitted operational data e
 
 The objective was to identify where machine downtime occurred most frequently and determine which equipment contributed most to those issues.
 
----
-
-## Business Questions
+### Business Questions
 
 The analysis focused on answering two questions:
 
 1. Which factory experienced the highest machine downtime?
-
 2. Which machine types contributed most to downtime in that factory?
 
----
-
-## Dataset
+### Dataset
 
 The telemetry dataset included information such as:
 
@@ -114,9 +110,7 @@ The telemetry dataset included information such as:
 
 A calculated measure named **Unhealthy** was created in Tableau to represent ten minutes of downtime whenever a machine reported an unhealthy status.
 
----
-
-## Methodology
+### Methodology
 
 The workflow included:
 
@@ -128,20 +122,11 @@ The workflow included:
 - Configuring the factory chart as a dashboard filter.
 - Using the dashboard to identify the machines responsible for downtime within the selected factory.
 
----
+### Dashboard
 
-## Dashboard
+The Tableau dashboard visualizes machine downtime across Daikibo's manufacturing facilities. Users can compare downtime by factory and interactively filter the results to identify which machine types contributed most to downtime at the selected location.
 
-The interactive dashboard allows users to:
-
-- Compare downtime across all factories.
-- Filter results by selecting an individual factory.
-- View downtime by device type for the selected location.
-- Explore operational performance through interactive visualizations.
-
----
-
-## Key Findings
+### Key Findings
 
 The analysis showed that:
 
@@ -154,19 +139,17 @@ These findings help identify where maintenance efforts and operational improveme
 
 ---
 
-# Task 2: Employee Equality Score Classification
+## Task 2: Employee Equality Score Classification
 
-## Background
+### Background
 
-Daikibo Industrials also requested support in reviewing employee equality scores generated by Deloitte's forensic technology team.
+Daikibo Industrials also requested support in reviewing employee equality scores generated by Deloitte's Forensic Technology team.
 
 Each employee role had already been assigned an Equality Score ranging from **-100 to +100**, where **0 represented ideal equality**.
 
 The objective was to classify each score according to predefined business rules.
 
----
-
-## Classification Rules
+### Classification Rules
 
 | Equality Score | Classification |
 |---------------|----------------|
@@ -174,23 +157,19 @@ The objective was to classify each score according to predefined business rules.
 | -20 to -11 and 11 to 20 | Unfair |
 | Less than -20 or greater than 20 | Highly Discriminative |
 
----
+### Excel Solution
 
-## Excel Solution
-
-A formula was used to automatically classify every equality score into its appropriate category based on the business rules provided.
+A formula was used to automatically classify every equality score into its appropriate category based on the provided business rules.
 
 This ensured consistent classification across the dataset while reducing manual effort.
 
----
-
-## Outcome
+### Outcome
 
 The completed worksheet successfully classified all employee equality scores into their respective categories, supporting future reporting and analysis of potential pay inequality across different factories and job roles.
 
 ---
 
-# Key Results
+## Key Results
 
 - Created an interactive Tableau dashboard for operational analysis.
 - Identified the manufacturing location with the highest downtime.
@@ -201,7 +180,7 @@ The completed worksheet successfully classified all employee equality scores int
 
 ---
 
-# Skills Demonstrated
+## Skills Demonstrated
 
 - Data Analysis
 - Data Visualization
@@ -217,73 +196,70 @@ The completed worksheet successfully classified all employee equality scores int
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```
+```text
 deloitte-data-analytics-job-simulation/
 │
 ├── README.md
 ├── LICENSE
-│
-├── task-1-tableau-dashboard/
-│   ├── daikibo-telemetry-data.json
-│   ├── dashboard-overview.png
-│   └── dashboard-seiko-selected.png
-│
-├── task-2-equality-analysis/
-│   └── Equality Table.xlsx
-│
-└── certificate/
-    ├── Deloitte Certificate.pdf
-    └── Deloitte Certificate.png
+├── Dashboard - task 1.png
+├── Task 5 Equality Table.xlsx
+├── Deloitte Australia Data Analytics Job Simulation on Forage.pdf
+└── Certification of Deloitte Australia Data Analytics on Forage.png
 ```
 
 ---
 
-# Screenshots
+## Screenshots
 
-## Factory Downtime Dashboard
+### Factory Downtime Dashboard
 
-_Add your overall Tableau dashboard screenshot here._
+The Tableau dashboard compares machine downtime across Daikibo's manufacturing facilities and allows interactive filtering to identify the machine types contributing most to downtime.
 
-```
-screenshots/dashboard-overview.png
-```
+![Factory Downtime Dashboard](Dashboard%20-%20task%201.png)
 
 ---
 
-## Dashboard Filtered by Daikibo Factory Seiko
-
-_Add the dashboard screenshot showing Daikibo Factory Seiko selected._
-
-```
-screenshots/dashboard-seiko-selected.png
-```
-
----
-
-# Certificate
+## Certificate
 
 I successfully completed the **Deloitte Australia Data Analytics Job Simulation** on **Forage**.
 
-You can find the certificate in the repository's **certificate** folder.
+### View Certificate
+
+[View the Deloitte Australia Data Analytics Job Simulation Certificate (PDF)](Deloitte%20Australia%20Data%20Analytics%20Job%20Simulation%20on%20Forage.pdf)
+
+### Certificate Preview
+
+![Deloitte Certificate](Certification%20of%20Deloitte%20Australia%20Data%20Analytics%20on%20Forage.png)
 
 ---
 
-# What I Learned
+## Project Files
+
+This repository includes the following project files:
+
+- **Dashboard - task 1.png** – Interactive Tableau dashboard showing downtime analysis.
+- **Task 5 Equality Table.xlsx** – Completed Excel worksheet with equality score classifications.
+- **Deloitte Australia Data Analytics Job Simulation on Forage.pdf** – Completion certificate.
+- **Certification of Deloitte Australia Data Analytics on Forage.png** – Certificate preview image.
+
+---
+
+## What I Learned
 
 This simulation gave me practical experience working with business datasets and reinforced the importance of turning raw data into actionable insights.
 
 I improved my ability to build interactive dashboards, interpret operational data, and communicate findings in a clear and meaningful way. I also strengthened my Excel skills by applying business rules to automate data classification and support decision-making.
 
-Most importantly, the project highlighted how data analytics is used to solve real business problems, from improving manufacturing performance to supporting workplace equality initiatives.
+Most importantly, the project highlighted how data analytics can be used to solve real business problems, from improving manufacturing performance to supporting workplace equality initiatives.
 
 ---
 
-# Acknowledgements
+## Acknowledgements
 
 This project was completed as part of the **Deloitte Australia Data Analytics Job Simulation** offered by **Forage**.
 
-The simulation provided valuable hands-on experience with realistic analytics tasks inspired by Deloitte's professional consulting work.
+The simulation provided valuable hands-on experience with realistic analytics tasks inspired by Deloitte's consulting work.
 
-The analyses, dashboard, documentation, and repository organization presented here reflect my own work completed during the simulation.
+The analyses, dashboard, documentation, and repository presented here reflect my own work completed during the simulation.
